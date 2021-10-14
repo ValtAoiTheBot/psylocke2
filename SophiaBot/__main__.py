@@ -103,11 +103,9 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-✘✘✘ 𝗛𝗲𝗹𝗽𝗳𝘂𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 ✘✘✘
-
-Every possibility of Sophia is documentated here
-Click buttons to get help
-"""
+`Hi.. I'm` Psylocke 
+Click On The Buttons Below To Get Documentation About Specific Modules..
+Powered by @PigasusUpdates 💓 [️️ ️](https://telegra.ph/file/ef0bfcff313fccc098d59.jpg) """
 
 DONATE_STRING = """ @dihanofficial """
 
