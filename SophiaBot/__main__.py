@@ -395,8 +395,11 @@ def sophia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins 👮‍♂️", callback_data="sophia_admin"),
-                    InlineKeyboardButton(text="Notes 📑", callback_data="sophia_notes"),
+                    InlineKeyboardButton(text="Admins ❣️", callback_data="sophia_admin"),
+                    InlineKeyboardButton(text="Notes 💖", callback_data="sophia_notes"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Support 💕", callback_data="sophia_support"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="source_"),
