@@ -74,7 +74,11 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """Hey there 👋! My name is *Sophia*.\n\nI can help manage your groups with useful features, feel free to add me to your groups!."""
+PM_START_TEXT = """
+Hᴇʟʟᴏ Tᕼᴇʀᴇ! [️️ ️](https://telegra.ph/file/681b2b18c7d658e8c6f4e.jpg) 💝, I'm Psylocke !
+I Aᴍ A Superhero Tᕼᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ😘.
+ Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs❣️ Click Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs🤗 
+"""
 
 STICKERS = (
       "CAACAgUAAxkBAAPNYWgLo64Q-FBGKPLNGqxfGCjBoW8AAqEDAAJQZSBXb8WT0PyG5ikhBA",
@@ -85,14 +89,14 @@ STICKERS = (
 
 buttons = [
     [
-        InlineKeyboardButton(text=" Commands Help ❓", callback_data="help_back"),
+        InlineKeyboardButton(text=" Help💖", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Info & About 🙋‍", callback_data="source_"),
+        InlineKeyboardButton(text=" Tips & Source", callback_data="source_"),
     ],
     [
-        InlineKeyboardButton(text=" Sophia News 🙋‍♀️ ", url=f"https://t.me/SophiaUpdates"),
-        InlineKeyboardButton(text=" Support Group 💬 ", url=f"https://t.me/SophiaSupport_Official"),
+        InlineKeyboardButton(text=" Psylocke news💞 ", url=f"https://t.me/SophiaUpdates"),
+        InlineKeyboardButton(text=" Support Group💕 ", url=f"https://t.me/SophiaSupport_Official"),
     ],
     [
         InlineKeyboardButton(text="➕ Add Psylocke to your Group ➕", url="t.me/Psylocke_robot?startgroup=true"),   
