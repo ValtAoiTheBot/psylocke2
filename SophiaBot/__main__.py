@@ -221,7 +221,8 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text("Heya, Sophia here :) PM me if you have any questions how to use me!")
+        update.effective_message.reply_text("Heya, Psylocke here 💖 I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+                uptime ) PM me if you have any questions how to use me!")
 
 
 def error_handler(update, context):
