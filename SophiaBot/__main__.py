@@ -89,14 +89,14 @@ STICKERS = (
 
 buttons = [
     [
-        InlineKeyboardButton(text=" Help💖", callback_data="help_back"),
+        InlineKeyboardButton(text="💖 Help 💖", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text=" Tips & Source", callback_data="source_"),
+        InlineKeyboardButton(text="💓 Tips & Source 💓", callback_data="source_"),
     ],
     [
-        InlineKeyboardButton(text=" Psylocke news💞 ", url=f"https://t.me/SophiaUpdates"),
-        InlineKeyboardButton(text=" Support Group💕 ", url=f"https://t.me/SophiaSupport_Official"),
+        InlineKeyboardButton(text="💞 Psylocke news 💞 ", url=f"https://t.me/SophiaUpdates"),
+        InlineKeyboardButton(text="💕 Support Group 💕 ", url=f"https://t.me/SophiaSupport_Official"),
     ],
     [
         InlineKeyboardButton(text="😍 Add Psylocke to your Group 😍", url="t.me/Psylocke_robot?startgroup=true"),   
@@ -108,7 +108,7 @@ HELP_STRINGS = """
 Click On The Buttons Below To Get Documentation About Specific Modules..
 Powered by @PigasusUpdates 💓 [️️ ️](https://telegra.ph/file/ef0bfcff313fccc098d59.jpg) """
 
-DONATE_STRING = """ @dihanofficial """
+DONATE_STRING = """ @kwannon """
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -395,11 +395,11 @@ def sophia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins ❣️", callback_data="sophia_admin"),
-                    InlineKeyboardButton(text="Notes 💖", callback_data="sophia_notes"),
+                    InlineKeyboardButton(text="❣️ Admins ❣️", callback_data="sophia_admin"),
+                    InlineKeyboardButton(text="💖 Notes 💖", callback_data="sophia_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support 💕", callback_data="sophia_support"),
+                    InlineKeyboardButton(text="💕 Support 💕", callback_data="sophia_support"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="source_"),
@@ -487,17 +487,17 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""Info & About 
+            text=""" 💞 Tips and source 💞 
                  \nClick buttons for help""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                    InlineKeyboardButton(text="tips 💗", callback_data="sophia_basichelp"),
+                    InlineKeyboardButton(text="💗 tips 💗", callback_data="sophia_basichelp"),
                   ],
                   [
-                    InlineKeyboardButton(text="🥰 Source Code", url=f"https://github.com/dihanofficial/SophiaBot"),
+                    InlineKeyboardButton(text="🥰 Source Code 🥰", url=f"https://github.com/dihanofficial/SophiaBot"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="source_back")
