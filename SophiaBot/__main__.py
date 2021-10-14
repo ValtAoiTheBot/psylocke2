@@ -221,8 +221,7 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text("Heya, Psylocke here 💖 I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
-                uptime ) PM me if you have any questions how to use me!")
+        update.effective_message.reply_text("Heya, Psylocke here 💖 PM me if you have any questions how to use me!")
 
 
 def error_handler(update, context):
@@ -388,7 +387,7 @@ def sophia_about_callback(update, context):
             text=f"*Here's basic Help regarding* *How to use Me?*"
             f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n• After adding promote me manually with full rights for faster experience.\n"
-            f"\n• Than send `/admincache@SophiaSLBot` in that chat to refresh admin list in My database.\n"
+            f"\n• Than send `/admincache@Psylocke_robot` in that chat to refresh admin list in My database.\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -398,10 +397,6 @@ def sophia_about_callback(update, context):
                  [
                     InlineKeyboardButton(text="Admins 👮‍♂️", callback_data="sophia_admin"),
                     InlineKeyboardButton(text="Notes 📑", callback_data="sophia_notes"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Support 👨‍🔧", callback_data="sophia_support"),
-                    InlineKeyboardButton(text="Credits 👨‍💻", callback_data="sophia_credit"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="source_"),
@@ -414,7 +409,7 @@ def sophia_about_callback(update, context):
     elif query.data == "sophia_admin":
         query.message.edit_text(
             text=f"*Let's make your group bit effective now*"
-            f"\nCongragulations, *Sophia* now ready to manage your group."
+            f"\nCongragulations, *Psylocke* now ready to manage your group."
             f"\n\n*Admin Tools*"
             f"\nBasic Admin tools help you to protect and powerup your group."
             f"\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -447,8 +442,8 @@ def sophia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support Group", url="t.me/dihan_official"),
-                    InlineKeyboardButton(text="Updates Channel", url="t.me/dihanofficial"),
+                    InlineKeyboardButton(text="Support Group❣️", url="t.me/PigasusSupport"),
+                    InlineKeyboardButton(text="Updates Channel💓", url="t.me/Pigasusupdates"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="sophia_basichelp"),
