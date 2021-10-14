@@ -496,15 +496,10 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                    InlineKeyboardButton(text="🙋‍♀️ About Me", callback_data="sophia_"),
-                    InlineKeyboardButton(text="❓ Basic Help", callback_data="sophia_basichelp"),
+                    InlineKeyboardButton(text="tips 💗", callback_data="sophia_basichelp"),
                   ],
                   [
-                    InlineKeyboardButton(text=" Special Credits ❤ ", url=f"https://telegra.ph/Special-Credits-08-21"),
-                    InlineKeyboardButton(text="Terms And Conditions 📄 ", url=f"https://telegra.ph/Terms-and-Conditions-08-21"),
-                  ],
-                  [
-                    InlineKeyboardButton(text="💾 Source Code", url=f"https://github.com/dihanofficial/SophiaBot"),
+                    InlineKeyboardButton(text="🥰 Source Code", url=f"https://github.com/dihanofficial/SophiaBot"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="source_back")
