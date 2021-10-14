@@ -89,16 +89,13 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="Info & About 🙋‍", callback_data="source_"),
-        InlineKeyboardButton(
-                  text="System Stats 💻", callback_data="stats_callback"
-        ),
     ],
     [
         InlineKeyboardButton(text=" Sophia News 🙋‍♀️ ", url=f"https://t.me/SophiaUpdates"),
         InlineKeyboardButton(text=" Support Group 💬 ", url=f"https://t.me/SophiaSupport_Official"),
     ],
     [
-        InlineKeyboardButton(text="➕ Add Sophia to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),   
+        InlineKeyboardButton(text="➕ Add Psylocke to your Group ➕", url="t.me/Psylocke_robot?startgroup=true"),   
     ],
 ]
 
