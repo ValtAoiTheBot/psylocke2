@@ -21,11 +21,10 @@ else:
     "** ᴘꜱʏʟᴏᴄᴋᴇ ɪꜱ ᴏɴʟɪɴᴇ **\n\n"
     "**Your Psylocke Alive And Systems Are Working Perfectly As It Should Be...**\n\n"
     "✘ 𝙰𝚋𝚘𝚞𝚝 𝚖𝚎 ✘\n\n"
-    f"➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ {version.__version__}\n"
+    "➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ 1.23.0**\n"
     "➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/Pigasusupdates)\n"
     "➾ **ᴀᴅᴅ ᴍᴇ**  ☞ [ᴄʟɪᴄᴋ ʜᴇʀᴇ](http://t.me/Psylocke_robot?startgroup=true)\n"
     "➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ** ☞ [ᴊᴏɪɴ](https://t.me/PigasusSupport)\n\n"
-    f"➾ **ᴜᴘᴛɪᴍᴇ** ☞ {uptime}\n\n"
-    f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [Kwannon](tg://user?id={Kwanon})")
+    "➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [Kwannon](tg://user?id={Kwanon})")
 
     
