@@ -9,9 +9,6 @@ import random
 from telethon import events, version
 from . import dcdef
 from telethon.tl.types import ChannelParticipantsAdmins
-# 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "TSF USERBOT"
-
 global ghanti
 ghanti = borg.uid
 edit_time = 5
