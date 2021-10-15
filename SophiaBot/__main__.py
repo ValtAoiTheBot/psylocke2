@@ -103,7 +103,7 @@ buttons = [
     ],
 ]
 
-PSYLOCKE_IMG = "https://telegra.ph/file/b37cec509d121c8c63518.jpg"
+PSYLOCKE_IMG = "https://telegra.ph/file/55a186da4d9b5a14373d0.jpg"
 
 HELP_STRINGS = """
 `Hi.. I'm` Psylocke 
