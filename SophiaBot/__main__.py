@@ -103,6 +103,8 @@ buttons = [
     ],
 ]
 
+PSYLOCKE_IMG = "https://telegra.ph/file/b37cec509d121c8c63518.jpg"
+
 HELP_STRINGS = """
 `Hi.. I'm` Psylocke 
 Click On The Buttons Below To Get Documentation About Specific Modules..
@@ -221,7 +223,8 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text("Heya, Psylocke here 💖 PM me if you have any questions how to use me!")
+        update.effective_message.reply_photo(
+            PSYLOCKE_IMG, caption= "Heya, Psylocke here 💖 PM me if you have any questions how to use me!")
 
 
 def error_handler(update, context):
