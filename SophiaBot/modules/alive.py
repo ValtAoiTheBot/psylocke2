@@ -7,8 +7,6 @@ from io import BytesIO
 from datetime import datetime
 import random
 from telethon import events, version
-from userbot.utils import admin_cmd, sudo_cmd
-from userbot import ALIVE_NAME, Lastupdate
 from . import dcdef
 from telethon.tl.types import ChannelParticipantsAdmins
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
@@ -42,7 +40,7 @@ async def hmm(yes):
     pm_caption += "➾ **ᴀᴅᴅ ᴍᴇ**  ☞ [ᴄʟɪᴄᴋ ʜᴇʀᴇ](http://t.me/Psylocke_robot?startgroup=true)\n"
     pm_caption += "➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ** ☞ [ᴊᴏɪɴ](https://t.me/PigasusSupport)\n\n"
     pm_caption += f"➾ **ᴜᴘᴛɪᴍᴇ** ☞ {uptime}\n\n"
-    pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{Kwannon}](tg://user?id={Kwanon})\n"
+    pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [Kwannon](tg://user?id={Kwanon})\n"
     on = await borg.send_file(yes.chat_id, file=file1,caption=pm_caption)
 
     await asyncio.sleep(edit_time)
