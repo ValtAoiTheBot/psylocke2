@@ -9,11 +9,7 @@ global ghanti
 ghanti = borg.uid
 edit_time = 5
 
-PSYLOCKE_IMG = ["https://telegra.ph/file/6f440b6c52be0cf1c0d29.jpg",
-"https://telegra.ph/file/65c3a5f74c2d5e169bcc5.jpg",
-"https://telegra.ph/file/b9b13f9bd1bf66acad9c9.jpg",
-"https://telegra.ph/file/c18e9f242750f738787a7.jpg"
-               ]
+PSYLOCKE_IMG = "https://telegra.ph/file/6f440b6c52be0cf1c0d29.jpg"
 
 else:
         update.effective_message.reply_photo( PSYLOCKE_IMG,caption= 
