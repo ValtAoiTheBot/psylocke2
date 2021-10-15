@@ -1,14 +1,10 @@
-import asyncio
-import os
-import requests
-import time
-from PIL import Image
-from io import BytesIO
-from datetime import datetime
-import random
-from telethon import events, version
-from . import dcdef
-from telethon.tl.types import ChannelParticipantsAdmins
+from telethon import events, Button, custom
+import re, os
+from SophiaBot.events import register
+from SophiaBot import telethn as tbot
+from SophiaBot import telethn as tgbot
+@register(pattern=("/alive"))
+async def awake(event):
 global ghanti
 ghanti = borg.uid
 edit_time = 5
@@ -19,9 +15,6 @@ file3 = "https://telegra.ph/file/b9b13f9bd1bf66acad9c9.jpg"
 file4 = "https://telegra.ph/file/c18e9f242750f738787a7.jpg"
 """ =======================CONSTANTS====================== """
 
-
-@borg.on(admin_cmd(pattern=r"/alive"))
-@borg.on(sudo_cmd(pattern=r"/alive", allow_sudo=True))
 
 async def hmm(yes):
     chat = await yes.get_chat()
