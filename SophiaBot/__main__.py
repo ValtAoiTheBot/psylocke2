@@ -95,8 +95,8 @@ buttons = [
         InlineKeyboardButton(text="💓 Tips & Source 💓", callback_data="source_"),
     ],
     [
-        InlineKeyboardButton(text="💞 Psylocke news 💞 ", url=f"https://t.me/SophiaUpdates"),
-        InlineKeyboardButton(text="💕 Support Group 💕 ", url=f"https://t.me/SophiaSupport_Official"),
+        InlineKeyboardButton(text="💞 Psylocke news 💞 ", url=f"https://t.me/Pigasusupdates"),
+        InlineKeyboardButton(text="💕 Support Group 💕 ", url=f"https://t.me/PigasusSupport"),
     ],
     [
         InlineKeyboardButton(text="😍 Add Psylocke to your Group 😍", url="t.me/Psylocke_robot?startgroup=true"),   
