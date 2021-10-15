@@ -3,7 +3,7 @@ import re, os
 from SophiaBot.events import register
 from SophiaBot import telethn as tbot
 from SophiaBot import telethn as tgbot
-@register(pattern=("/alive"))
+@register(pattern=("/alive")
 async def awake(event):
 global ghanti
 ghanti = borg.uid
