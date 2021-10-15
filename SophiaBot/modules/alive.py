@@ -1,7 +1,3 @@
-# Thanks to Sipak bro and Aryan.. 
-# animation Idea by @ItzSipak && @Hell boy_pikachu
-# Made by @hellboi_atul ....and thanks to @Crackexy for the logos...
-# Kang with credits else gay...
 import asyncio
 import os
 import requests
