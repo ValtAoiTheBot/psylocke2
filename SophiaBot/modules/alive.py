@@ -3,8 +3,8 @@ import re, os
 from SophiaBot.events import register
 from SophiaBot import telethn as tbot
 from SophiaBot import telethn as tgbot
-PHOTO = "https://telegra.ph/file/5de0aa6672f2272416d33.jpg"
-@register(pattern=("/botinfo"))
+PHOTO = "https://telegra.ph/file/3ad9b32cd366aab77f1ae.jpg"
+@register(pattern=("/alive"))
 async def awake(event):
   PIKACHU = event.sender.first_name
   PIKACHU = "**♡ I,m ᴘꜱʏʟᴏᴄᴋᴇ 💝** \n\n"
