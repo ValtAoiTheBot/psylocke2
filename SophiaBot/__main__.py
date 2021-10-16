@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hᴇʟʟᴏ Tᕼᴇʀᴇ! [️️ ️](https://telegra.ph/file/681b2b18c7d658e8c6f4e.jpg) 💝, I'm Psylocke !
+Hᴇʟʟᴏ Tᕼᴇʀᴇ! [️️ ️](https://telegra.ph/file/573723a2e75caae5ce99c.jpg) 💝, I'm Psylocke !
 I Aᴍ A Superhero Tᕼᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ😘.
  Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs❣️ Click Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs🤗 
 """
@@ -103,7 +103,7 @@ buttons = [
     ],
 ]
 
-PSYLOCKE_IMG = "https://telegra.ph/file/55a186da4d9b5a14373d0.jpg"
+PSYLOCKE_IMG = "https://telegra.ph/file/169c2d7afacaae8d866cc.jpg"
 
 HELP_STRINGS = """
 `Hi.. I'm` Psylocke 
