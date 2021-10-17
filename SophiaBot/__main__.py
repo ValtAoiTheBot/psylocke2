@@ -22,6 +22,7 @@ from SophiaBot import (
     StartTime,
     telethn,
     pbot,
+    ubot,
     updater,
 )
 
@@ -851,6 +852,12 @@ def main():
         telethn.run_until_disconnected()
 
     updater.idle()
+
+try:
+    ubot.start()
+except BaseException:
+    print("Userbot Error ! Have you added a STRING_SESSION in deploying??")
+    sys.exit(1)
 
 
 if __name__ == "__main__":
