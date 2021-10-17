@@ -796,8 +796,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}"update.effective_message.reply_photo(
-            PSYLOCKE_IMG, caption= "Heya, Psylocke here 💖 PM me if you have any questions how to use me!") ")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", PSYLOCKE_IMG, caption = "I'm Online Now! 💫 ")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to @SophiaSupport_Official, go and check!"
