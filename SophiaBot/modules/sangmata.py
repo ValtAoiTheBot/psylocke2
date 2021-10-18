@@ -1,7 +1,7 @@
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl import functions, types
 
-from SophiaBot.events import register as PSYLOCKE
+from SophiaBot.events import register as LSMM
 from SophiaBot import telethn 
 
 
@@ -35,7 +35,7 @@ async def silently_send_message(conv, text):
     return response
 
 
-@PSYLOCKE(pattern="^/sg ?(.*)")
+@LSMM(pattern="^/sg ?(.*)")
 async def _(event):
 
     if event.fwd_from:
