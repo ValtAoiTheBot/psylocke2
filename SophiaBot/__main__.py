@@ -450,7 +450,7 @@ def sophia_about_callback(update, context):
         )
     elif query.data == "sophia_support":
         query.message.edit_text(
-            text="* Sophia's Updates News & Supports*"
+            text="* Psylocke's Updates News & Supports*"
             "\nJoin Support Group & Updates Channel",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
