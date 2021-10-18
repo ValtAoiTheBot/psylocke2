@@ -1,9 +1,6 @@
 import asyncio
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-
-from helpers import get_user_from_event, sanga_seperator
-from helpers.utils import _format
 from telethon.tl import functions, types
 
 from SophiaBot import telethn
