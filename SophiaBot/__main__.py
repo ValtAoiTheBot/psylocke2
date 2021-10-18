@@ -99,7 +99,10 @@ buttons = [
         InlineKeyboardButton(text="💕 Support Group 💕 ", url=f"https://t.me/PigasusSupport"),
     ],
     [
-        InlineKeyboardButton(text="😍 Add Psylocke to your Group 😍", url="t.me/Psylocke_robot?startgroup=true"),   
+        InlineKeyboardButton(text="💗 Psylocke Support 💗 ", url=f"https://t.me/Psylocke_support"),
+    ],
+    [
+        InlineKeyboardButton(text="💝 Add Psylocke to your Group 💝", url="t.me/Psylocke_robot?startgroup=true"),   
     ],
 ]
 
