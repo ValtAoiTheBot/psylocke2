@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hᴇʟʟᴏ Tᕼᴇʀᴇ! \n [️️ ️](https://telegra.ph/file/681b2b18c7d658e8c6f4e.jpg) 💝, I'm Psylocke !
+Hᴇʟʟᴏ Tᕼᴇʀᴇ! \n [️️ ️](https://telegra.ph/file/982b873ccf591a4f7c30e.jpg) 💝, I'm Psylocke !
 I Aᴍ A Superhero Tᕼᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ😘.
  Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs❣️ Click Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs🤗 
 """
@@ -111,7 +111,7 @@ PSYLOCKE_IMG = "https://telegra.ph/file/169c2d7afacaae8d866cc.jpg"
 HELP_STRINGS = """
 `Hi.. I'm` Psylocke 
 Click On The Buttons Below To Get Documentation About Specific Modules..
-Powered by @PigasusUpdates 💓 [️️ ️](https://telegra.ph/file/ef0bfcff313fccc098d59.jpg) """
+Powered by @PigasusUpdates 💓 [️️ ️](https://telegra.ph/file/9e1cef31589add36c6f36.jpg) """
 
 DONATE_STRING = """ @kwannon """
 
