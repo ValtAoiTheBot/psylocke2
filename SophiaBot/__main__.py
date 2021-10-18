@@ -796,7 +796,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "My Telekinesis And Telepathic Powers are returned to me Now 💫")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[My Telekinesis And Telepathic Powers are returned to me Now 💫] (https://telegra.ph/file/39b4d29703dab6b9bb039.jpg)")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to @SophiaSupport_Official, go and check!"
