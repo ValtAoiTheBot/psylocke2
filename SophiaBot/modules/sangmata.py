@@ -6,7 +6,7 @@ from SophiaBot.events import register as lilly
 
 @lilly(
     pattern="sg(u)?(?:\s|$)([\s\S]*)",
-    command=("sg", plugin_category),
+    command=("sg"),
     info={
         "header": "To get name history of the user.",
         "flags": {
@@ -33,12 +33,12 @@ async def _(event):  # sourcery no-metrics
         return
     uid = user.id
     chat = "@SangMataInfo_bot"
-    catevent = await edit_or_reply(event, "Processing...")
+    misty = await edit_or_reply(event, "Processing...")
     async with event.client.conversation(chat) as conv:
         try:
             await conv.send_message(f"/search_id {uid}")
         except YouBlockedUserError:
-            await edit_delete(catevent, "unblock @Sangmatainfo_bot and then try")
+            await edit_delete(misty, "unblock @Sangmatainfo_bot and then try")
         responses = []
         while True:
             try:
@@ -48,9 +48,9 @@ async def _(event):  # sourcery no-metrics
             responses.append(response.text)
         await event.client.send_read_acknowledge(conv.chat_id)
     if not responses:
-        await edit_delete(catevent, "bot can't fetch results")
+        await edit_delete(misty, "bot can't fetch results")
     if "No records found" in responses:
-        await edit_delete(catevent, "The user doesn't have any record")
+        await edit_delete(misty, "The user doesn't have any record")
     names, usernames = await sanga_seperator(responses)
     cmd = event.pattern_match.group(1)
     serena = None
@@ -60,4 +60,4 @@ async def _(event):  # sourcery no-metrics
             await event.reply(i, parse_mode=_format.parse_pre)
         else:
             serena = True
-            await catevent.edit(i, parse_mode=_format.parse_pre)
+            await misty.edit(i, parse_mode=_format.parse_pre)
