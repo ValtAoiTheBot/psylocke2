@@ -17,10 +17,10 @@ from telethon.tl.types import ChannelParticipantsAdmins
 
 edit_time = 10
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/cf73748c573be66cb2b56.jpg"
-file2 = "https://telegra.ph/file/a1c250048ef1fe7a3921c.jpg"
-file3 = "https://telegra.ph/file/4ee14dca0bb7270d2e9a6.jpg"
-file4 = "https://telegra.ph/file/359c8e1592cd643574f3b.jpg"
+file1 = "https://telegra.ph/file/6f440b6c52be0cf1c0d29.jpg"
+file2 = "https://telegra.ph/file/65c3a5f74c2d5e169bcc5.jpg"
+file3 = "https://telegra.ph/file/b9b13f9bd1bf66acad9c9.jpg"
+file4 = "https://telegra.ph/file/c18e9f242750f738787a7.jpg"
 """ =======================CONSTANTS====================== """
 
 START_TIME = datetime.utcnow()
@@ -55,11 +55,11 @@ async def hmm(yes):
     pm_caption += "**I Am Alive Till You Supporting...**\n\n"
     pm_caption += "✘ 𝙰𝚋𝚘𝚞𝚝 𝚖𝚎 ✘\n\n"
     pm_caption += f"➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ `{version.__version__}`\n"
-    pm_caption += "➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/PigasusSupport)\n"
-    pm_caption += "➾ **ʟɪᴄᴇɴꜱᴇ**  ☞ [𝚃𝙴𝙰𝙼 𝙿𝙸𝙶𝙰𝚂𝚄𝚂](https://t.me/PigasusUpdates)\n"
-    pm_caption += "➾ **ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ** ☞ [𝙰𝙰𝚂𝙵](https://github.com/AASFCYBERKING)\n\n"
+    pm_caption += "➾ **ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ** ☞ [ᴊᴏɪɴ](https://t.me/PigasusSupport)\n"
+    pm_caption += "➾ **ᴜᴘᴅᴀᴛᴇꜱ**  ☞ [𝚃𝙴𝙰𝙼 𝙿𝙸𝙶𝙰𝚂𝚄𝚂](https://t.me/PigasusUpdates)\n"
+    pm_caption += "➾ **ᴄʀᴇᴅɪᴛꜱ** ☞ [𝙰𝙰𝚂𝙵](https://github.com/AASFCYBERKING)\n\n"
     pm_caption += f"➾ **ᴜᴘᴛɪᴍᴇ** ☞ `{uptime}`\n\n"
-    pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [AASF](tg://user?id=2022280326)\n"
+    pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [ᴋᴡᴀɴɴᴏɴ](tg://user?id=2069031161)\n"
     on = await borg.send_file(yes.chat_id, file=file1,caption=pm_caption)
 
     await asyncio.sleep(edit_time)
