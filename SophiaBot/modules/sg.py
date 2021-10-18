@@ -35,7 +35,7 @@ async def silently_send_message(conv, text):
     return response
 
 
-PSYLOCKE(pattern="^/sg ?(.*)")
+@PSYLOCKE(pattern="^/sg ?(.*)")
 async def _(event):
 
     if event.fwd_from:
