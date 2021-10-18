@@ -10,9 +10,9 @@ from io import BytesIO
 from datetime import datetime
 import random
 from telethon import events, version
-from Sophia.events import register
-from Sophia import telethn as borg
-from Sophia import StartTime, dispatcher
+from SophiaBot.events import register
+from SophiaBot import telethn as borg
+from SophiaBot import StartTime, dispatcher
 from telethon.tl.types import ChannelParticipantsAdmins
 
 edit_time = 10
@@ -44,14 +44,14 @@ async def _human_time_duration(seconds):
                          .format(amount, unit, "" if amount == 1 else "s"))
     return ', '.join(parts)
 
-@register(pattern=("/alive"))
+@register(pattern=("/botinfo"))
 async def hmm(yes):
     chat = await yes.get_chat()
     await yes.delete()
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    pm_caption = "** 𝑺𝒆𝒓𝒆𝒏𝒂 𝑖𝑠 𝑜𝑛𝑙𝑖𝑛𝑒  **\n\n"
+    pm_caption = "** Psylocke 𝑖𝑠 𝑜𝑛𝑙𝑖𝑛𝑒  **\n\n"
     pm_caption += "**I Am Alive Till You Supporting...**\n\n"
     pm_caption += "✘ 𝙰𝚋𝚘𝚞𝚝 𝚖𝚎 ✘\n\n"
     pm_caption += f"➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ `{version.__version__}`\n"
