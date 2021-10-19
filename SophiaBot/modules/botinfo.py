@@ -44,7 +44,7 @@ async def _human_time_duration(seconds):
                          .format(amount, unit, "" if amount == 1 else "s"))
     return ', '.join(parts)
 
-@register(pattern=("/botinfo"))
+@register(pattern=("/binfo"))
 async def hmm(yes):
     chat = await yes.get_chat()
     await yes.delete()
