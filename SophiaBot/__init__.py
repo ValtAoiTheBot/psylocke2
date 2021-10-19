@@ -97,7 +97,7 @@ if ENV:
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     AI_API_KEY = os.environ.get("AI_API_KEY", None)
-    #STRING_SESSION = os.environ.get("STRING_SESSION", None)
+    STRING_SESSION = os.environ.get("STRING_SESSION", None)
     WALL_API = os.environ.get("WALL_API", None)
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
@@ -188,7 +188,7 @@ else:
     GENIUS_API_TOKEN = Config.GENIUS_API_TOKEN
     LASTFM_API_KEY = Config.LASTFM_API_KEY
     #VIRUS_API_KEY = Config.VIRUS_API_KEY
-    #STRING_SESSION = Config.STRING_SESSION
+    STRING_SESSION = Config.STRING_SESSION
     
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
@@ -216,6 +216,8 @@ else:
           
         
          
+ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
+
 #install aiohttp session
 print("[Sophia]: Initializing AIOHTTP Session")
 aiohttpsession = ClientSession()    
@@ -226,7 +228,7 @@ arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("Sophia", API_ID, API_HASH)
 pbot = Client("sophiapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
-#mbot = TelegramClient(StringSession(STRING_SESSION), API_KEY, API_HASH)
+mbot = TelegramClient(StringSession(STRING_SESSION), API_KEY, API_HASH)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
