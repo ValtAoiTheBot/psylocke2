@@ -1,3 +1,5 @@
+import asyncio
+
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl import functions, types
 
@@ -7,7 +9,7 @@ from SophiaBot import telethn
 
 @psylocke(
     pattern="^/sg ?(.*)"),
-    command=("sg"),
+    command=("/sg"),
     async def _(event):  # sourcery no-metrics
     "To get name/username history."
     input_str = "".join(event.text.split(maxsplit=1)[1:])
