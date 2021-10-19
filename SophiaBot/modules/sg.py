@@ -6,7 +6,7 @@ from SophiaBot import telethn
 
 
 @psylocke(
-    pattern="sg(u)?(?:\s|$)([\s\S]*)",
+    pattern="^/sg ?(.*)"),
     command=("sg"),
     async def _(event):  # sourcery no-metrics
     "To get name/username history."
