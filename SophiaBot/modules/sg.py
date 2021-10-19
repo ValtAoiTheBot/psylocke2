@@ -1,9 +1,9 @@
-from telethon.errors.rpcerrorlist 
-import YouBlockedUserError
+from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl import functions, types
 
-from SophiaBot.events import register as psylocke
-from SophiaBot import telethn
+from SophiaBot.events import register as LSMM
+from SophiaBot import telethn 
+
 
 async def is_register_admin(chat, user):
 
@@ -34,47 +34,70 @@ async def silently_send_message(conv, text):
     await conv.mark_read(message=response)
     return response
 
-@psylocke(
-    pattern="("/sg")),
-    async def _(event):  # sourcery no-metrics
-    "To get name/username history."
-    input_str = "".join(event.text.split(maxsplit=1)[1:])
-    reply_message = await event.get_reply_message()
-    if not input_str and not reply_message:
-        await edit_delete(
-            event,
-            "reply to  user's text message to get name/username history or give userid/username",
-        )
-    user, rank = await get_user_from_event(event, secondgroup=True)
-    if not user:
+
+@LSMM(pattern="^/sg ?(.*)")
+async def _(event):
+
+    if event.fwd_from:
+
         return
-    uid = user.id
-    chat = "@SangMataInfo_bot"
-    sophia = await edit_or_reply(event, "Processing...")
-    async with event.client.conversation(chat) as conv:
-        try:
-            await conv.send_message(f"/search_id {uid}")
-        except YouBlockedUserError:
-            await edit_delete(sophia, "unblock @Sangmatainfo_bot and then try")
-        responses = []
-        while True:
-            try:
-                response = await conv.get_response(timeout=2)
-            except asyncio.TimeoutError:
-                break
-            responses.append(response.text)
-        await event.client.send_read_acknowledge(conv.chat_id)
-    if not responses:
-        await edit_delete(sophia, "bot can't fetch results")
-    if "No records found" in responses:
-        await edit_delete(sophia, "The user doesn't have any record")
-    names, usernames = await sanga_seperator(responses)
-    cmd = event.pattern_match.group(1)
-    lilly = None
-    check = usernames if cmd == "u" else names
-    for i in check:
-        if lilly:
-            await event.reply(i, parse_mode=_format.parse_pre)
+
+    if event.is_group:
+        if await is_register_admin(event.input_chat, event.message.sender_id):
+            pass
         else:
-            lilly = True
-            await sophia.edit(i, parse_mode=_format.parse_pre)
+            return
+    if not event.reply_to_msg_id:
+
+        await event.reply("
+Reply to any user message.
+")
+
+        return
+
+    reply_message = await event.get_reply_message()
+
+    if not reply_message.text:
+
+        await event.reply("
+reply to text message
+")
+
+        return
+
+    chat = "Sangmatainfo_bot"
+    uid = reply_message.sender_id
+
+    if reply_message.sender.bot:
+
+        await event.edit("
+Reply to actual users message.
+")
+
+        return
+
+    lol = await event.reply("
+Processing
+")
+
+    async with ubot.conversation(chat) as conv:
+
+        try:
+
+            # response = conv.wait_event(
+            #   events.NewMessage(incoming=True, from_users=1706537835)
+            # )
+
+            await silently_send_message(conv, f"/search_id {uid}")
+
+            # response = await response
+            responses = await silently_send_message(conv, f"/search_id {uid}")
+        except YouBlockedUserError:
+
+            await event.reply("
+Please unblock @Sangmatainfo_bot and try again
+")
+
+            return
+        await lol.edit(f"{responses.text}")
+        # await lol.edit(f"{response.message.message}")
