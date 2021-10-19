@@ -9,8 +9,7 @@ from helpers.utils import _format
 from SophiaBot.events import register as psylocke
 
 @psylocke(
-    pattern="^/sg ?(.*)"),
-    command=("/sg"),
+    pattern="("/sg")),
     async def _(event):  # sourcery no-metrics
     "To get name/username history."
     input_str = "".join(event.text.split(maxsplit=1)[1:])
