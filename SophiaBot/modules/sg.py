@@ -80,9 +80,7 @@ Reply to actual users message.
 Processing
 ")
 
-    async with ubot.conversation(chat) as conv:
-
-        try:
+   try:
 
             # response = conv.wait_event(
             #   events.NewMessage(incoming=True, from_users=1706537835)
