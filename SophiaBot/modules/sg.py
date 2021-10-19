@@ -1,5 +1,3 @@
-import asyncio
-
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl import functions, types
 
