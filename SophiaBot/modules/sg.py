@@ -10,19 +10,7 @@ from SophiaBot import telethn
 @psylocke(
     pattern="sg(u)?(?:\s|$)([\s\S]*)",
     command=("sg"),
-    info={
-        "header": "To get name history of the user.",
-        "flags": {
-            "u": "That is sgu to get username history.",
-        },
-        "usage": [
-            "{tr}sg <username/userid/reply>",
-            "{tr}sgu <username/userid/reply>",
-        ],
-        "examples": "{tr}sg @missrose_bot",
-    },
-)
-async def _(event):  # sourcery no-metrics
+    async def _(event):  # sourcery no-metrics
     "To get name/username history."
     input_str = "".join(event.text.split(maxsplit=1)[1:])
     reply_message = await event.get_reply_message()
