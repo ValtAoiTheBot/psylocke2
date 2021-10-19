@@ -1,12 +1,38 @@
-from telethon.errors.rpcerrorlist import YouBlockedUserError
-
-from userbot import catub
-
-from core.managers import edit_delete, edit_or_reply
-from helpers import get_user_from_event, sanga_seperator
-from helpers.utils import _format
+from telethon.errors.rpcerrorlist 
+import YouBlockedUserError
+from telethon.tl import functions, types
 
 from SophiaBot.events import register as psylocke
+from SophiaBot import telethn
+
+async def is_register_admin(chat, user):
+
+    if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
+
+        return isinstance(
+            (
+                await telethn(functions.channels.GetParticipantRequest(chat, user))
+            ).participant,
+            (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
+        )
+    if isinstance(chat, types.InputPeerChat):
+
+        ui = await telethn.get_peer_id(user)
+        ps = (
+            await telethn(functions.messages.GetFullChatRequest(chat.chat_id))
+        ).full_chat.participants.participants
+        return isinstance(
+            next((p for p in ps if p.user_id == ui), None),
+            (types.ChatParticipantAdmin, types.ChatParticipantCreator),
+        )
+    return None
+
+
+async def silently_send_message(conv, text):
+    await conv.send_message(text)
+    response = await conv.get_response()
+    await conv.mark_read(message=response)
+    return response
 
 @psylocke(
     pattern="("/sg")),
