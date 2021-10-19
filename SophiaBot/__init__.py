@@ -229,7 +229,7 @@ arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("Sophia", API_ID, API_HASH)
 pbot = Client("sophiapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
-mbot = TelegramClient(StringSession(STRING_SESSION), API_KEY, API_HASH)
+mbot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
