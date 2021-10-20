@@ -270,7 +270,7 @@ async def lego(event):
     shadowcolor = "blue"
     fnt = glob.glob("./SophiaBot/resources/Vampire Wars.otf")
     randf = random.choice(fnt)
-    font = ImageFont.truetype(randf, 120)
+    font = ImageFont.truetype(randf, 300)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
