@@ -27,10 +27,8 @@ SOFTWARE.
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl import functions, types
 
-from SophiaBot.telethon import tbot
+from SophiaBot.telethon import tbot, ubot
 from SophiaBot.events import register as cutiepii
-from SophiaBot.pyrogramee.pluginhelpers import admins_only
-from SophiaBot import pbot 
 
 async def is_register_admin(chat, user):
 
