@@ -112,7 +112,7 @@ PSYLOCKE_IMG = "https://telegra.ph/file/2f8562cc5857b9c790d26.jpg"
 HELP_STRINGS = """
 `Hi.. I'm` Psylocke 
 Click On The Buttons Below To Get Documentation About Specific Modules..
-Powered by @PigasusUpdates 💓 [️️ ️](https://telegra.ph/file/9e1cef31589add36c6f36.jpg) """
+Powered by @PigasusUpdates 💓 [️️ ️](https://telegra.ph/file/3da258a607c94fff91a3f.jpg) """
 
 DONATE_STRING = """ @kwannon """
 
