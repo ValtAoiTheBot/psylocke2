@@ -335,7 +335,7 @@ async def lego(event):
   if not quew:
      await event.reply('Please Gimmie A Text For The Logo.')
      return
- pesan = await event.reply('Logo In A Process. Please Wait.')
+ pesan = await event.reply('Creating Logo. Please Wait.')
  try:
     text = event.pattern_match.group(1)
     randc = random.choice(LOGO_LINKS)
@@ -357,7 +357,7 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
     fname = "Cutiepii.png"
     img.save(fname, "png")
-    await telethn.send_file(event.chat_id, file=fname, caption = f"Made for {user_mention} by @{Psylocke}(t.me/psylocke_robot)")         
+    await telethn.send_file(event.chat_id, file=fname, caption = f"Made by @{Psylocke}(t.me/psylocke_robot)")         
     await pesan.delete()
     if os.path.exists(fname):
             os.remove(fname)
