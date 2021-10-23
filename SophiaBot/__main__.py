@@ -229,11 +229,11 @@ def start(update: Update, context: CallbackContext):
         update.effective_message.reply_photo(
             PSYLOCKE_IMG, caption= "Heya, Psylocke here 💖 PM me if you have any questions how to use me!")
 
-buttons = [
+button = [
     [
         InlineKeyboardButton(text="💞 Updates 💞 ", url=f"https://t.me/Pigasusupdates"),
         InlineKeyboardButton(text="💕 Support 💕 ", url=f"https://t.me/PigasusSupport"),
-    ],
+    ]
 ]
 
 
