@@ -95,7 +95,7 @@ buttons = [
         InlineKeyboardButton(text="💓 Tips & Source 💓", callback_data="source_"),
     ],
     [
-        InlineKeyboardButton(text="💞 Psylocke news 💞 ", url=f"https://t.me/Pigasusupdates"),
+        InlineKeyboardButton(text="💞 Updates Channel 💞 ", url=f"https://t.me/Pigasusupdates"),
         InlineKeyboardButton(text="💕 Support Group 💕 ", url=f"https://t.me/PigasusSupport"),
     ],
     [
@@ -227,7 +227,14 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            PSYLOCKE_IMG, caption= "`Heya, Psylocke here 💖 PM me if you have any questions how to use me!`")
+            PSYLOCKE_IMG, caption= "Heya, Psylocke here 💖 PM me if you have any questions how to use me!")
+
+buttons = [
+    [
+        InlineKeyboardButton(text="💞 Updates 💞 ", url=f"https://t.me/Pigasusupdates"),
+        InlineKeyboardButton(text="💕 Support 💕 ", url=f"https://t.me/PigasusSupport"),
+    ],
+]
 
 
 def error_handler(update, context):
