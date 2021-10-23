@@ -75,10 +75,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hᴇʟʟᴏ Tᕼᴇʀᴇ! `{user_chat.first_name}` \n [️️ ️](https://telegra.ph/file/3a9d340db0462d27d469c.jpg) 💝, I Aᴍ Pꜱʏʟᴏᴄᴋᴇ!
+`Hᴇʟʟᴏ Tᕼᴇʀᴇ! \n [️️ ️](https://telegra.ph/file/3a9d340db0462d27d469c.jpg) 💝, I Aᴍ Pꜱʏʟᴏᴄᴋᴇ!
 I Aᴍ A Sᴜᴘᴇʀʜᴇʀᴏ Tᕼᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ😘.
- Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs❣️
-➛ Click Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs🤗 ××
+Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs❣️ Click Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs🤗`
 """
 
 STICKERS = (
@@ -228,7 +227,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            PSYLOCKE_IMG, caption= "Heya, Psylocke here 💖 PM me if you have any questions how to use `{uptime}` me!")
+            PSYLOCKE_IMG, caption= "`Heya, Psylocke here 💖 PM me if you have any questions how to use me!`")
 
 
 def error_handler(update, context):
