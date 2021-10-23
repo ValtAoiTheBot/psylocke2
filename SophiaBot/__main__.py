@@ -229,12 +229,8 @@ def start(update: Update, context: CallbackContext):
         update.effective_message.reply_photo(
             PSYLOCKE_IMG, caption= "Heya, Psylocke here 💖 PM me if you have any questions how to use me!")
 
-button = [
-    [
-        InlineKeyboardButton(text="💞 Updates 💞 ", url=f"https://t.me/Pigasusupdates"),
-        InlineKeyboardButton(text="💕 Support 💕 ", url=f"https://t.me/PigasusSupport"),
-    ]
-]
+parse_mode=ParseMode.HTML, reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/pigasussupport") ], 
+                                                               [ InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/Pigasusupdates") ] ]
 
 
 def error_handler(update, context):
