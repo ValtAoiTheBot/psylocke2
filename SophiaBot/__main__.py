@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hᴇʟʟᴏ Tᕼᴇʀᴇ! {user_chat.first_name} \n [️️ ️](https://telegra.ph/file/bc43bca455bfe746f237a.jpg) 💝, I Aᴍ Pꜱʏʟᴏᴄᴋᴇ!
+Hᴇʟʟᴏ Tᕼᴇʀᴇ! `{user_chat.first_name}` \n [️️ ️](https://telegra.ph/file/bc43bca455bfe746f237a.jpg) 💝, I Aᴍ Pꜱʏʟᴏᴄᴋᴇ!
 I Aᴍ A Sᴜᴘᴇʀʜᴇʀᴏ Tᕼᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ😘.
  Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs❣️
 ➛ Click Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs🤗 ××
