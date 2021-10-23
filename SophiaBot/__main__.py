@@ -227,11 +227,21 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            PSYLOCKE_IMG, caption= "Heya, Psylocke here 💖 PM me if you have any questions how to use me!")
-
-parse_mode=ParseMode.HTML, reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/pigasussupport") ], 
-                                                               [ InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/Pigasusupdates") ] ]
-
+            PSYLOCKE_IMG, caption= "<code>Heya psylocke is here \nI am Awake Since</code>: <code>{}</code>".format(
+                uptime
+            ),
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [
+                  InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/PigasusSupport")
+                  ],
+                  [
+                  InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/pigasusupdates")
+                  ]
+                ]
+            ),
+        )
 
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
