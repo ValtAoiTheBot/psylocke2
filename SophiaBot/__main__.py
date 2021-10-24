@@ -77,13 +77,17 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 `Hᴇʟʟᴏ Tᕼᴇʀᴇ!` \n [️️ ️](https://telegra.ph/file/3a9d340db0462d27d469c.jpg) 💝, `I Aᴍ Pꜱʏʟᴏᴄᴋᴇ!
 I Aᴍ A Sᴜᴘᴇʀʜᴇʀᴏ Tᕼᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ😘.
-Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs❣️ Click Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs🤗` "<code>Heya psylocke is here \nI am Awake Since</code>: <code>{}</code>".format(
-                uptime
-            ),
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                [
+Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs❣️ Click Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs🤗`
+"""
+
+STICKERS = (
+      "CAACAgUAAxkBAAPNYWgLo64Q-FBGKPLNGqxfGCjBoW8AAqEDAAJQZSBXb8WT0PyG5ikhBA",
+      "CAACAgUAAxkBAAPQYWgL2iU_kxWxxFJTh5XRJVWAph0AAtMDAAJbfCFXq9FTMIiiI1IhBA",
+      "CAACAgUAAxkBAAPTYWgL9HFIClAV5JuErc_qdeT2f-oAAmEEAAKDMSBXi5ecdV4Nv4MhBA",
+)    
+
+
+buttons = [
     [
         InlineKeyboardButton(text="💖 Help 💖", callback_data="help_back"),
     ],
