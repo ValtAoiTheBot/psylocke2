@@ -75,9 +75,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hᴇʟʟᴏ Tᕼᴇʀᴇ!` \n [️️ ️](https://telegra.ph/file/3a9d340db0462d27d469c.jpg) 💝, `I Aᴍ Pꜱʏʟᴏᴄᴋᴇ!
-I Aᴍ A Sᴜᴘᴇʀʜᴇʀᴏ Tᕼᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ😘.
-Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs❣️ Click Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs🤗`
+Hᴇʟʟᴏ Tᕼᴇʀᴇ!🧚 \n [️️ ️](https://telegra.ph/file/3a9d340db0462d27d469c.jpg) I Aᴍ Pꜱʏʟᴏᴄᴋᴇ!
+I Aᴍ A Sᴜᴘᴇʀʜᴇʀᴏ Tᕼᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 🧚‍♀️.
+Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs 📓 ━━━━━━━━━━━━━━━━━━━━━━━━
+Click Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs 📒
 """
 
 STICKERS = (
@@ -92,7 +93,7 @@ buttons = [
         InlineKeyboardButton(text="⚙️ Help", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text=" 📁Tips & Source", callback_data="source_"),
+        InlineKeyboardButton(text="📁 Tips & Source", callback_data="source_"),
     ],
     [
         InlineKeyboardButton(text="📋 Updates Channel", url=f"https://t.me/Pigasusupdates"),
@@ -109,9 +110,9 @@ buttons = [
 PSYLOCKE_IMG = "https://telegra.ph/file/cfb3493a34ba133654056.jpg"
 
 HELP_STRINGS = """
-`Hi.. I'm Psylocke 
+Hi.. I'm Psylocke 
 Click On The Buttons Below To Get Documentation About Specific Modules..
-Powered by @PigasusUpdates 💓` [️️ ️](https://telegra.ph/file/61320099cc9d9c0b0dd8d.jpg) """
+Powered by @PigasusUpdates 📂[️️ ️](https://telegra.ph/file/61320099cc9d9c0b0dd8d.jpg) """
 
 DONATE_STRING = """ @kwannon """
 
@@ -227,17 +228,17 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            PSYLOCKE_IMG, caption= "<code>Heya psylocke is here \nI am Awake Since</code>: <code>{}</code>".format(
+            PSYLOCKE_IMG, caption= "<code>Heya psylocke is here ✨ \nI am Awake Since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/PigasusSupport")
+                  InlineKeyboardButton(text="📚 Sᴜᴘᴘᴏʀᴛ", url="https://t.me/PigasusSupport")
                   ],
                   [
-                  InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/pigasusupdates")
+                  InlineKeyboardButton(text="💬 Uᴘᴅᴀᴛᴇs", url="https://t.me/pigasusupdates")
                   ]
                 ]
             ),
