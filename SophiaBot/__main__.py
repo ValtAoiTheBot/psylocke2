@@ -77,7 +77,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 Hᴇʟʟᴏ Tᕼᴇʀᴇ!🧚 \n [️️ ️](https://telegra.ph/file/3a9d340db0462d27d469c.jpg) I Aᴍ Pꜱʏʟᴏᴄᴋᴇ!
 I Aᴍ A Sᴜᴘᴇʀʜᴇʀᴏ Tᕼᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 🧚‍♀️.
-Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs 📓 Click Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs 📒
+Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs 📓 Cʟɪᴄᴋ Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs 📒
 """
 
 STICKERS = (
@@ -89,20 +89,20 @@ STICKERS = (
 
 buttons = [
     [
-        InlineKeyboardButton(text="⚙️ Help", callback_data="help_back"),
+        InlineKeyboardButton(text="⚙️ Hᴇʟᴘ", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="💡 Tips & Source", callback_data="source_"),
+        InlineKeyboardButton(text="💡 Tɪᴘꜱ Aɴᴅ Sᴏᴜʀᴄᴇ", callback_data="source_"),
     ],
     [
-        InlineKeyboardButton(text="📋 Updates Channel", url=f"https://t.me/Pigasusupdates"),
-        InlineKeyboardButton(text="🗣️ Support Group", url=f"https://t.me/PigasusSupport"),
+        InlineKeyboardButton(text="📋 Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ", url=f"https://t.me/Pigasusupdates"),
+        InlineKeyboardButton(text="🗣️ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url=f"https://t.me/PigasusSupport"),
     ],
     [
-        InlineKeyboardButton(text="🌐 Psylocke Support", url=f"https://t.me/Psylocke_support"),
+        InlineKeyboardButton(text="🌐 Pꜱʏʟᴏᴄᴋᴇ Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Psylocke_support"),
     ],
     [
-        InlineKeyboardButton(text="➕ Add Me", url="t.me/Psylocke_robot?startgroup=true"),   
+        InlineKeyboardButton(text="➕ Aᴅᴅ Mᴇ", url="t.me/Psylocke_robot?startgroup=true"),   
     ],
 ]
 
@@ -238,8 +238,10 @@ def start(update: Update, context: CallbackContext):
                   ],
                   [
                   InlineKeyboardButton(text="💬 Uᴘᴅᴀᴛᴇs", url="https://t.me/pigasusupdates")
+                  ],
+                  [
+                  InlineKeyboardButton(text="❓ Hᴇʟᴘ", url="https://t.me/Psylocke_robot?start=help")
                   ]
-                ]
             ),
         )
 
