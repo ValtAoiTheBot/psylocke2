@@ -44,14 +44,14 @@ async def _human_time_duration(seconds):
                          .format(amount, unit, "" if amount == 1 else "s"))
     return ', '.join(parts)
 
-@register(pattern=("alive"))
+@register(pattern=("/alive"))
 async def hmm(yes):
     chat = await yes.get_chat()
     await yes.delete()
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    pm_caption = "** Psylocke 𝑖𝑠 𝑜𝑛𝑙𝑖𝑛𝑒  **\n\n"
+    pm_caption = "** Psylocke Is Online **\n\n"
     pm_caption += "**I Am Alive Till You Supporting...**\n\n"
     pm_caption += "✘ 𝙰𝚋𝚘𝚞𝚝 𝚖𝚎 ✘\n\n"
     pm_caption += f"➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ `{version.__version__}`\n"
