@@ -1,29 +1,3 @@
-"""
-MIT License
-
-Copyright (C) 2021 Awesome-RJ
-
-This file is part of @Cutiepii_Robot (Telegram Bot)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-"""
-
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl import functions, types
 
@@ -74,7 +48,7 @@ async def _(event):
         return
     if not event.reply_to_msg_id:
 
-        await event.reply("```Reply to any user message.```")
+        await event.reply("`Reply to any user message.`")
 
         return
 
@@ -82,7 +56,7 @@ async def _(event):
 
     if not reply_message.text:
 
-        await event.reply("```reply to text message```")
+        await event.reply("`reply to text message`")
 
         return
 
@@ -91,11 +65,11 @@ async def _(event):
 
     if reply_message.sender.bot:
 
-        await event.edit("```Reply to actual users message.```")
+        await event.edit("`Reply to actual users message.`")
 
         return
 
-    lol = await event.reply("```Processing```")
+    lol = await event.reply("`Processing`")
 
     async with tbot.conversation(chat) as conv:
 
@@ -111,7 +85,7 @@ async def _(event):
             responses = await silently_send_message(conv, f"/search_id {uid}")
         except YouBlockedUserError:
 
-            await event.reply("```Please unblock @Sangmatainfo_bot and try again```")
+            await event.reply("`Please unblock @Sangmatainfo_bot and try again`")
 
             return
         await lol.edit(f"{responses.text}")
