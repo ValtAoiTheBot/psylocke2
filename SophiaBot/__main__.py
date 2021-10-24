@@ -77,8 +77,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 Hᴇʟʟᴏ Tᕼᴇʀᴇ!🧚 \n [️️ ️](https://telegra.ph/file/3a9d340db0462d27d469c.jpg) I Aᴍ Pꜱʏʟᴏᴄᴋᴇ!
 I Aᴍ A Sᴜᴘᴇʀʜᴇʀᴏ Tᕼᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 🧚‍♀️.
-Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs 📓 ━━━━━━━━━━━━━━━━━━━━━━━━
-Click Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs 📒
+Wɪᴛʜ Nᴇᴡ Aɴᴅ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs 📓 Click Tᕼᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴs Tᴏ Sᴇᴇ Mʏ Fᴇᴀᴛᴜʀᴇs 📒
 """
 
 STICKERS = (
@@ -404,11 +403,11 @@ def sophia_about_callback(update, context):
 
     elif query.data == "sophia_basichelp":
         query.message.edit_text(
-            text=f"*Here's basic Help regarding* *How to use Me?*"
-            f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
-            f"\n• After adding promote me manually with full rights for faster experience.\n"
-            f"\n• Than send `/admincache@Psylocke_robot` in that chat to refresh admin list in My database.\n"
-            f"\n\n*All done now use below given button's to know about use!*\n"
+            text=f"*Here's basic Help regarding* *How to use Me*❓"
+            f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true) 🧚‍♀️\n"
+            f"\n• After adding promote me manually with full rights for faster experience 🗯\n"
+            f"\n• Than send `/admincache@Psylocke_robot` in that chat to refresh admin list in My database 🗂\n"
+            f"\n\n*All done now use below given button's to know about use!* 🗒\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -431,14 +430,14 @@ def sophia_about_callback(update, context):
 
     elif query.data == "sophia_admin":
         query.message.edit_text(
-            text=f"*Let's make your group bit effective now*"
-            f"\nCongragulations, *Psylocke* now ready to manage your group."
-            f"\n\n*Admin Tools*"
-            f"\nBasic Admin tools help you to protect and powerup your group."
-            f"\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
-            f"\n\n*Welcome*"
-            f"\nLets set a welcome message to welcome new users coming to your group."
-            f"send `/setwelcome [message]` to set a welcome message!",
+            text=f"*Let's make your group effective now*"
+            f"\nCongragulations, *Psylocke* now ready to manage your group 💬"
+            f"\n\n*Admin Tools* ⚙️"
+            f"\nBasic Admin tools help you to protect and powerup your group 🎓"
+            f"\nYou can ban members, Kick members, Promote someone as admin through commands of bot 📦"
+            f"\n\n*Welcome* 📣"
+            f"\nLets set a welcome message to welcome new users coming to your group 📢"
+            f"send `/setwelcome [message]` to set a welcome message ⚙️",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -449,9 +448,9 @@ def sophia_about_callback(update, context):
     elif query.data == "sophia_notes":
         query.message.edit_text(
             text=f"<b> Setting up notes</b>"
-            f"\nYou can save message/media/audio or anything as notes"
-            f"\nto get a note simply use # at the beginning of a word"
-            f"\n\nYou can also set buttons for notes and filters (refer help menu)",
+            f"\nYou can save message/media/audio or anything as notes 📑"
+            f"\nto get a note simply use # at the beginning of a word 🗒"
+            f"\n\nYou can also set buttons for notes and filters (refer help menu) 📄",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="sophia_basichelp")]]
@@ -465,8 +464,8 @@ def sophia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support Group❣️", url="t.me/PigasusSupport"),
-                    InlineKeyboardButton(text="Updates Channel💓", url="t.me/Pigasusupdates"),
+                    InlineKeyboardButton(text="🎙 Support Group", url="t.me/PigasusSupport"),
+                    InlineKeyboardButton(text="🌐 Updates Channel", url="t.me/Pigasusupdates"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="sophia_basichelp"),
