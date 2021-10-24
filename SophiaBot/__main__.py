@@ -89,20 +89,20 @@ STICKERS = (
 
 buttons = [
     [
-        InlineKeyboardButton(text="💖 Help 💖", callback_data="help_back"),
+        InlineKeyboardButton(text="⚙️ Help", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="💓 Tips & Source 💓", callback_data="source_"),
+        InlineKeyboardButton(text=" 📁Tips & Source", callback_data="source_"),
     ],
     [
-        InlineKeyboardButton(text="💞 Updates Channel 💞 ", url=f"https://t.me/Pigasusupdates"),
-        InlineKeyboardButton(text="💕 Support Group 💕 ", url=f"https://t.me/PigasusSupport"),
+        InlineKeyboardButton(text="📋 Updates Channel", url=f"https://t.me/Pigasusupdates"),
+        InlineKeyboardButton(text="🗣️ Support Group", url=f"https://t.me/PigasusSupport"),
     ],
     [
-        InlineKeyboardButton(text="💗 Psylocke Support 💗 ", url=f"https://t.me/Psylocke_support"),
+        InlineKeyboardButton(text="🌐 Psylocke Support", url=f"https://t.me/Psylocke_support"),
     ],
     [
-        InlineKeyboardButton(text="💝 Add Psylocke to your Group 💝", url="t.me/Psylocke_robot?startgroup=true"),   
+        InlineKeyboardButton(text="➕ Add Me", url="t.me/Psylocke_robot?startgroup=true"),   
     ],
 ]
 
