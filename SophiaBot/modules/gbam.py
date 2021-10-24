@@ -13,6 +13,8 @@ from SophiaBot.modules.helper_funcs.alternate import typing_action
 from SophiaBot import dispatcher, DRAGONS, DEMONS, LOGGER
 from SophiaBot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 
+Import SophiaBot.modules.gbam_strings.py
+
 @run_async
 def gbun(update, context):
     user = update.effective_user
