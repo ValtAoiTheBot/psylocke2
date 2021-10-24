@@ -242,6 +242,7 @@ def start(update: Update, context: CallbackContext):
                   [
                   InlineKeyboardButton(text="❓ Hᴇʟᴘ", url="https://t.me/Psylocke_robot?start=help")
                   ]
+                ]
             ),
         )
 
