@@ -93,7 +93,7 @@ buttons = [
         InlineKeyboardButton(text="⚙️ Help", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="📁 Tips & Source", callback_data="source_"),
+        InlineKeyboardButton(text="💡 Tips & Source", callback_data="source_"),
     ],
     [
         InlineKeyboardButton(text="📋 Updates Channel", url=f"https://t.me/Pigasusupdates"),
@@ -415,11 +415,11 @@ def sophia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="❣️ Admins ❣️", callback_data="sophia_admin"),
-                    InlineKeyboardButton(text="💖 Notes 💖", callback_data="sophia_notes"),
+                    InlineKeyboardButton(text="👮 Admins", callback_data="sophia_admin"),
+                    InlineKeyboardButton(text="📑 Notes", callback_data="sophia_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="💕 Support 💕", callback_data="sophia_support"),
+                    InlineKeyboardButton(text="🗣️ Support", callback_data="sophia_support"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="source_"),
@@ -507,17 +507,17 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" 💞 Tips and source 💞 
+            text=""" 💡 Tips and source 
                  \nClick buttons for help""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                    InlineKeyboardButton(text="💗 tips 💗", callback_data="sophia_basichelp"),
+                    InlineKeyboardButton(text="💡 tips", callback_data="sophia_basichelp"),
                   ],
                   [
-                    InlineKeyboardButton(text="🥰 Source Code 🥰", url=f"https://github.com/dihanofficial/SophiaBot"),
+                    InlineKeyboardButton(text="📂 Source Code", url=f"https://github.com/dihanofficial/SophiaBot"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="source_back")
