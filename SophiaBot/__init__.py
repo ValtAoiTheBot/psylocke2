@@ -217,6 +217,8 @@ else:
           
         
          
+tbot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
+
 ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
 
 #install aiohttp session
