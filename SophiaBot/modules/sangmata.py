@@ -28,7 +28,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl import functions, types
 
 from SophiaBot.events import register as Cutiepii
-from SophiaBot import telethn, tbot
+from SophiaBot import telethn, ubot
 
 
 async def is_register_admin(chat, user):
