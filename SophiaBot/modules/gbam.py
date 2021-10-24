@@ -13,7 +13,7 @@ from SophiaBot.modules.helper_funcs.alternate import typing_action
 from SophiaBot import dispatcher, DRAGONS, DEMONS, LOGGER
 from SophiaBot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 
-Import SophiaBot.modules.gbam_strings
+Import SophiaBot.modules.gbam_strings for fun
 
 @run_async
 def gbun(update, context):
