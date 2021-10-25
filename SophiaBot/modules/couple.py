@@ -99,4 +99,4 @@ __help__ = """
 
  @SophiaUpdates 
  """
-__mod_name__ = "Couples"
+__mod_name__ = "👫 Couples"
