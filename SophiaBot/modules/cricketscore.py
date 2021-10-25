@@ -40,7 +40,7 @@ async def _(event):
         parse_mode="HTML",
     )
 
-__mod_name__ = "Cricket Score"
+__mod_name__ = "🏏 Cricket Score"
 
 __help__ = """
 *MATCH INFO*    
