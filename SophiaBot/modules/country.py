@@ -123,4 +123,4 @@ __help__ = """
 @SophiaUpdates
 """
 
-__mod_name__ = "Country"
+__mod_name__ = "🌍 Country"
