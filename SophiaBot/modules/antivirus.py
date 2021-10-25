@@ -135,4 +135,4 @@ __help__ = """
  *Powerted by* @SophiaUpdates ❤
 """
 
-__mod_name__ = "Virus Scan"
+__mod_name__ = "🦠 Virus Scan"
