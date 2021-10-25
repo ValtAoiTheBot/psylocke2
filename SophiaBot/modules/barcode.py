@@ -109,5 +109,5 @@ __help__ = """
 *Powerted by* @dihanofficial
 """
 
-__mod_name__ = "Barcode"
+__mod_name__ = "📡 Barcode"
 
