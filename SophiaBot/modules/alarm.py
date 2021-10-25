@@ -136,4 +136,4 @@ __help__ = """
 **NOTE:** Please turn on notifications for @SophiaSLBot otherwise you will not get notification for the alarm !
 """
 
-__mod_name__ = "Alarm"
+__mod_name__ = "🚨 Alarm"
