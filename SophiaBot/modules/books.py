@@ -67,4 +67,4 @@ __help__ = """
  - /books book name : Usage :Gets Instant Download Link Of Given Book.
 @SophiaSLBot ❤
 """
-__mod_name__ = "Books"
+__mod_name__ = "📚 books"
