@@ -85,9 +85,10 @@ async def hmm(yes):
 
 __help__ = """
  - /alive : A command like start
-*Powerted by* @Pigasus_updates
+*Powered by* @Pigasus_updates
 """
 
 __mod_name__ = "🎆 Alive"
+__command_list__ = ["🎆 Alive"]
 
     
