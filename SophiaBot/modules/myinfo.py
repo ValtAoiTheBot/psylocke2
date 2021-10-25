@@ -1,4 +1,3 @@
-import System
 from telethon.sync import events
 from telethon import Button
 await event.client.bot.send_message(event.chat_id, f'**➢ Hᴇʏ {(event.sender.first_name)}**\n\n**➢ I Aᴍ [Psylocke](t.me/Psylocke_robot)**\n**➢ I Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ [Kwannon](t.me/kwannon)**', file='https://telegra.ph/file/a340604e274705673b96a.jpg', buttons=[Button.inline('**Check**', data="psylocke")]
