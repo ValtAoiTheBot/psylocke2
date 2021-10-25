@@ -41,7 +41,7 @@ async def boycott_kangs(client, message):
             os.remove(files)
             
 
-__mod_name__ = "BoyCot Image" 
+__mod_name__ = "🕳️ BoyCot Image" 
 
 __help__ = """ 
 *BoyCot_Img* - Creates Boycott Image Like this 🙋‍♀️
