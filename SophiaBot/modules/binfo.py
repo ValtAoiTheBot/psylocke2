@@ -84,11 +84,11 @@ async def hmm(yes):
     ok7 = await borg.edit_message(yes.chat_id, ok6, file=file4)
 
 __help__ = """
- - /alive : A command like start
+ /alive : A command like start
 *Powered by* @Pigasus_updates
 """
 
 __mod_name__ = "🎆 Alive"
-__command_list__ = ["🎆 Alive"]
+__command_list__ = ["/alive",]
 
     
