@@ -192,8 +192,7 @@ BESTY_IMG = "https://telegra.ph/file/a340604e274705673b96a.jpg"
    # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_photo(
-            BESTY_IMG, caption= 
-           "Oh, Genos? Let's get this moving.", reply_to_message_id=reply
+            BESTY_IMG, caption= "Oh, Genos? Let's get this moving.", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
