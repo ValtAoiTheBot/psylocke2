@@ -215,9 +215,6 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
           
-        
-         
-tbot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
 
 ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
 
