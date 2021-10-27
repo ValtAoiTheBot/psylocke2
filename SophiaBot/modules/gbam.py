@@ -7,13 +7,13 @@ from telegram.ext import Filters, CallbackContext, CommandHandler, run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown
 
-from VegetaRobot.modules.helper_funcs.extraction import extract_user
-from VegetaRobot.modules.helper_funcs.filters import CustomFilters
-from VegetaRobot.modules.helper_funcs.alternate import typing_action
-from VegetaRobot import dispatcher, DRAGONS, DEMONS, LOGGER
-from VegetaRobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from SophiaBot.modules.helper_funcs.extraction import extract_user
+from SophiaBot.modules.helper_funcs.filters import CustomFilters
+from SophiaBot.modules.helper_funcs.alternate import typing_action
+from SophiaBot import dispatcher, DRAGONS, DEMONS, LOGGER
+from SophiaBot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 
-import VegetaRobot.modules.gbam_strings as fun
+import SophiaBot.modules.gbam_strings as fun
 
 @run_async
 def gbun(update, context):
