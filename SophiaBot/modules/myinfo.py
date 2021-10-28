@@ -1,8 +1,8 @@
 from telethon import custom, events, Button
 import os,re
-from Sophia import telethn as bot
-from Sophia import telethn as tgbot
-from Sophia.events import register 
+from SophiaBot import telethn as bot
+from SophiaBot import telethn as tgbot
+from SophiaBot.events import register 
 @register(pattern="/myinfo")
 async def proboyx(event):
   button = [[custom.Button.inline("CHECK",data="information")]]
@@ -13,7 +13,7 @@ async def callback_query_handler(event):
   try:
     boy = event.sender_id
     PRO = await bot.get_entity(boy)
-    SERENA = "YOUR DETAILS BY SERENA \n"
+    SERENA = "YOUR DETAILS BY PSYLOCKE \n"
     SERENA += f"FIRST NAME : {PRO.first_name} \n"
     SERENA += f"LAST NAME : {PRO.last_name}\n"
     SERENA += f"YOU BOT : {PRO.bot} \n"
